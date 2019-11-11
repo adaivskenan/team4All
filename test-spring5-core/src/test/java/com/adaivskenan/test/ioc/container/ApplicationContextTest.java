@@ -3,13 +3,10 @@
  */
 package com.adaivskenan.test.ioc.container;
 
-import java.util.List;
-
 import org.junit.jupiter.api.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.adaivskenan.test.ioc.assit.services.PetStoreService;
 import com.adaivskenan.test.ioc.assit.services.PetStoreServiceImpl;
 
 /**
