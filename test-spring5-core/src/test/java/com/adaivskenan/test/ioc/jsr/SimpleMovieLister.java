@@ -3,8 +3,6 @@
  */
 package com.adaivskenan.test.ioc.jsr;
 
-import javax.inject.Inject;
-
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.junit.jupiter.SpringJUnitConfig;
