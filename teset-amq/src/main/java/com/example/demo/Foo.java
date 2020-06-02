@@ -13,7 +13,7 @@ public class Foo
         {
             RedeliveryPolicy redeliveryPolicy = new RedeliveryPolicy();
             // configure redelivery policy
-            redeliveryPolicy.setMaximumRedeliveries(1);
+            redeliveryPolicy.setMaximumRedeliveries(0);//客户端不重试可以保证接受重试次数与服务端配置一致
             connectionFactory.setRedeliveryPolicy(redeliveryPolicy);
         };
     }
