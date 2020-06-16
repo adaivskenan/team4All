@@ -51,7 +51,7 @@ public class FileTest {
 	}
 
 	public static void readFile() throws IOException {
-		File file = new File("E:\\工作文件\\问题收集\\2018-12-06服务中表提示不可用\\Untitled-15.log");
+		File file = new File("C:\\Users\\qinjunjie.JIUQI\\Desktop\\2019-12-11_183436.log");
 		List<String> allLines = Files.readAllLines(file.toPath(), StandardCharsets.UTF_8);
 		for (String line : allLines) {
 			if (line.contains("resolved")) {

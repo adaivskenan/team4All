@@ -1,0 +1,13 @@
+Spring Core 5.2.0 doc
+	https://docs.spring.io/spring/docs/5.2.0.RELEASE/spring-framework-reference/core.html#spring-core
+	
+	
+1. The IoC Container
+2. Resources
+3. Validation, Data Binding, and Type Conversion
+4. Spring Expression Language (SpEL)
+5. Aspect Oriented Programming with Spring
+6. Spring AOP APIs
+7. Null-safety
+8. Data Buffers and Codecs
+9. Appendix

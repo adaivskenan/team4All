@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<!-- It is possible, but not recommended, to reference files in parent directories 
+		using a relative "../" path. Doing so creates a dependency on a file that 
+		is outside the current application. In particular, this reference is not 
+		recommended for classpath: URLs (for example, classpath:../services.xml), 
+		where the runtime resolution process chooses the “nearest” classpath root 
+		and then looks into its parent directory. Classpath configuration changes 
+		may lead to the choice of a different, incorrect directory. -->
+	<import resource="services.xml" />
+	<import resource="daos.xml" />
+</beans>

@@ -8,6 +8,7 @@ import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
 
+@Controller
 public class Test {
 
 	public static void main(String[] args) throws IOException {
@@ -27,6 +28,14 @@ public class Test {
 		System.out.println(response.message());
 		System.out.println(response.toString());
 
+	}
+	
+	@RequestMapping(value = "/n", method = RequestMethod.GET)
+	public void method(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+		System.out.println("123123123123");
+//		request.getRequestDispatcher("./page.html?para=some").forward(request, response);
+		System.out.println(request.getRequestURL());
+		response.sendRedirect("n/page.html");
 	}
 
 }
