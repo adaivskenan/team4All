@@ -18,6 +18,8 @@ public class SimpleMovieLister {
 	public void testRequiredAnnotation() {
 		ApplicationContext ctx = new AnnotationConfigApplicationContext(AppConfig.class);
 		System.out.println(ctx.getBean(MovieFinder.class));
+		Service bean = ctx.getBean(Service.class);
+		System.out.println(bean.getMovieFinder());
 	}
 
 }
